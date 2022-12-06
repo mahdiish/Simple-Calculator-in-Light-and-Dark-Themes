@@ -1,0 +1,165 @@
+html,
+body {
+  background-color: white;
+  transition: 0.2s;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.calculatorAndTheme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.calculatorSection {
+  width: 370px;
+  border: 2px solid gainsboro;
+  border-radius: 6px;
+  padding: 14px 14px 14px 14px;
+}
+
+.displaySection {
+  width: 100%;
+  height: 100px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
+.displayCalculation {
+  padding: 0 2%;
+  text-align: right;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.displayResult {
+  padding: 0 2%;
+  text-align: right;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.keySection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 18px;
+  margin-top: 21px;
+}
+
+.keySection > * {
+  margin: 0;
+  height: 52px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.keySection p:not(:last-child) {
+  border: 1px solid gainsboro;
+}
+
+.keySection p:not(:last-child):hover {
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+.equalsBtn {
+  border: 1px solid lightgreen;
+  background-color: lightgreen;
+}
+
+.equalsBtn:hover {
+  background-color: rgb(12, 248, 83);
+  cursor: pointer;
+}
+
+/* Theme */
+/* The theme changer is built based on a video on a YT Channel (CODE WITH HOSSEIN) */
+.light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.toggle {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.toggle i {
+  width: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  z-index: 1;
+}
+
+.toggle .ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.light .toggle {
+  background: linear-gradient(145deg, #e1e1e1, #ffffff);
+  box-shadow: 3px 3px 4px #e6e6e6, -3px -3px 4px #ffffff;
+}
+
+.light .toggle .bxs-sun {
+  color: #fafafa;
+}
+
+.light .toggle .bx-moon {
+  color: #151d2a;
+}
+
+.light .toggle .ball {
+  background-color: #151d2a;
+}
+
+/* */
+.dark {
+  background: #151d2a;
+}
+
+.dark .toggle {
+  background: #151d2a;
+  box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
+}
+
+.dark .toggle .bx-sun {
+  color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+  color: #151d2a;
+}
+
+.dark .toggle .ball {
+  background-color: #fafafa;
+  transform: translateX(50px);
+}
+
+.whiteText {
+  color: white;
+}

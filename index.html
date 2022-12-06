@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculatorAndTheme">
+      <div class="calculatorSection">
+        <div class="displaySection">
+          <p class="text displayCalculation"></p>
+          <p class="text displayResult"></p>
+        </div>
+
+        <div class="keySection">
+          <p class="text percentageBtn">%</p>
+          <p class="text clearBtn">CE</p>
+          <p class="text backspaceBtn">BS</p>
+          <p class="text divisionBtn"><i class="fa-solid fa-divide"></i></p>
+
+          <p class="text sevenBtn">7</p>
+          <p class="text eightBtn">8</p>
+          <p class="text nineBtn">9</p>
+          <p class="text multiplicationBtn">
+            <i class="fa-solid fa-xmark"></i>
+          </p>
+
+          <p class="text fourBtn">4</p>
+          <p class="text fiveBtn">5</p>
+          <p class="text sixBtn">6</p>
+          <p class="text minusBtn"><i class="fa-solid fa-minus"></i></p>
+
+          <p class="text oneBtn">1</p>
+          <p class="text twoBtn">2</p>
+          <p class="text threeBtn">3</p>
+          <p class="text plusBtn"><i class="fa-solid fa-plus"></i></p>
+
+          <p class="text changeSignBtn">+/-</p>
+          <p class="text zeroBtn">0</p>
+          <p class="text dotBtn">.</p>
+          <p class="text equalsBtn"><i class="fa-solid fa-equals"></i></p>
+        </div>
+      </div>
+
+      <!-- The theme changer is built based on a video on a YT Channel (CODE WITH HOSSEIN) -->
+      <div class="light">
+        <label class="toggle" for="toggle">
+          <i class="bx bxs-sun"></i>
+          <i class="bx bx-moon"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
